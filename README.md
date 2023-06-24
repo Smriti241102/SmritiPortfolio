@@ -1,1 +1,1 @@
-# SmritiPortfolio
+# Smriti Rani
