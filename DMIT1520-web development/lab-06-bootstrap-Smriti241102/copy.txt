@@ -1,0 +1,10 @@
+Navigation Items:
+Shop
+Blog 
+Contact
+
+Banner Content:
+Banner Text Area
+Lightweight, flexible component for showcasing hero unit style content.
+Button: Learn More
+

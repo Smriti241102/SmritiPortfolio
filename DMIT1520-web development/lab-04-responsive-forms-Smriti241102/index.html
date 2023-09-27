@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't leave me like this :/</title>
+
+    <!-- Website & Author Information -->
+    <meta name="author" content="...">
+    <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section>
+        <div class="bg">
+			<!-- This is a placeholder for the background image. -->
+		</div>
+        <div class="wide-flex">
+            <div>
+				<div class="brand">
+					<img src="img/logo.svg" alt="">
+					<h1>remote.ly</h1>
+				</div>
+	            <h2>Make every day ‘bring your pet to work’ day.</h2>
+	            <p>Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to securely connect to clients, no matter where you are.</p>
+	        </div>
+
+            <!--forms-->
+            <form action="3" method="post">
+                <!--ACCOUNT INFO-->
+                <fieldset>
+                    <h3>Your Account</h3>
+                    <div class="flex-container">
+                        <!--username-->
+                        <div>
+                            <label for="username" >Username</label>
+                            <input id="username" type="text" minlength="6">
+                            <span class="invalid">Username should be at least 6 characters long!</span>
+                        </div>
+
+                        <!--email-->
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email">
+                            <span class="hint" data-hint="email needs to be in a proper format: hello@example.ca"></span>
+                        </div>
+
+                        <!--password-->
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" type="password" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                            <span class="hint" data-hint="Your password must contain at least one uppercase letter, one lowercase letter, one number and be a mi of 8 characers"></span>
+                        </div>
+
+                        <div>
+                            <!-- We would have to use js to check the values that the passwords are equal values-->
+                            <label for="pass-check">Password (Again!)</label>
+                            <input id="pass-check" type="password">
+                            <span class="invalid invaild-pw"></span>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>All About You</h3>
+                    <div class="flex-container">
+                        <div>
+                            <label for="fname" >First Name</label>
+                            <input type="text" id="fname" minlength="3" >
+                            <span class="invalid">First Name should be at least 3 characters long!</span>
+                        </div>
+
+                        <div>
+                            <label for="lname" >Last Name</label>
+                            <input type="text" id="lname"required placeholder=" " minlength="3">
+                            <span class="invalid">Last Name should be at least 3 characters long!</span>
+                        </div>
+                       
+
+                        <div>
+                            <label for="dob">Date Of Birth (optional)</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+                        
+                        <div>
+                            <label for="business">Business Type (optional)</label>
+                            <select name="business" id="business">
+                                <option value="Sole Propritorship">Sole Propritorship</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Limited Liability">Limited Liability</option>
+                                <option value="corporation">Corporation</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!--submit-->
+                <div>
+                    <input type="submit" value="Claim Your Free Trial &#9656;">
+                </div>
+
+                <!--terms-->
+                <div class="terms">
+
+                    <label class="checkbox" for="acceptance">
+                        By Signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                        <input type="checkbox" id="acceptance">
+                    </label>
+                </div>
+            </form>
+            
+
+        </div> <!-- //wide-flex -->
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

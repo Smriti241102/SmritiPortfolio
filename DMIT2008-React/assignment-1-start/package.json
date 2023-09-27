@@ -1,0 +1,21 @@
+{
+  "name": "assignment-1-start",
+  "version": "0.0.1",
+  "description": "dmit2008 asignment1 Smriti Rani",
+  "main": "index.js",
+  "source": "index.html",
+
+  "scripts": {
+    "hello": "echo \"this is command line script\"",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Smriti Rani",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

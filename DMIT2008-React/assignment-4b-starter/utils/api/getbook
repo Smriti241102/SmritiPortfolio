@@ -1,0 +1,11 @@
+import { BASE_URL } from './base.js'
+
+
+const getBook =(bookId) => {
+    return fetch(`${BASE_URL}/works/${bookId}.json`)
+    .then((response)=> {
+        return response.json()
+    })
+  }
+
+  export {getBook}

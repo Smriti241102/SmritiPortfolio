@@ -1,0 +1,10 @@
+Test Case,Taxable Income,Federal Tax Amount
+Bracket 1,26679.50,4001.93
+Bracket 1 Boundary,53359.00,8003.85
+Bracket 2,80038.00,13473.05
+Bracket 2 Boundary,106717.00,18942.24
+Bracket 3,136073.50,26574.93
+Bracket 3 Boundary,165430.00,34207.62
+Bracket 4,200552.50,44393.15
+Bracket 4 Boundary,235675.00,54578.67
+Bracket 5,471350.00,132351.42
